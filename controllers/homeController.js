@@ -14,6 +14,12 @@ respondHome : (req, res) => {
 chat: (req, res) => {
     res.render("chat");
 },
+showFacilities:(req,res)=>{
+    res.render("facilities");
+},
+showMembership:(req,res)=>{
+    res.render("membership");
+},
 showJobs : (req, res) => {
     res.render("jobs"); 
 }};

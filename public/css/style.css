@@ -1,455 +1,785 @@
-/* Default styles for elements */
+/* Reset some default styles */
 body, h1, h2, p, ul, li {
     margin: 0;
+    padding: 0;
 }
 
-/* Basic page styling for the entire page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
-}
-
-/* Header styling */
-header {
-    background-color: #fff;
-    color: #333;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: large;
-}
-
-/* Styling for the logo image within the header */
-.logo img {
-    max-height: 120px;
-}
-
-/* Styling for the title within the header */
-.title {
-    margin-left: 20px;
-}
-
-/* Navigation Bar styling */
-nav {
-    background-color: #003366;
-    width: 100%;
-}
-
-/* Styling for the navigation bar */
-.navbar {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Styling for individual navigation items */
-.navbar li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 20px;
-    padding: 10px 20px;
-    background-color: beige;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    width: 140px;
-    text-align: center;
-}
-
-/* Styling for navigation links */
-.navbar a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Main content styling */
-main {
-    flex-grow: 1; /* Grow to fill the available space */
-
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    margin-left: 80px;
-    margin-top: 30px;
-}
-
-/* Footer styling */
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #ccc;
-    color: #333;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Styling for the footer information */
-#footer-info {
-    margin-left: 50px;
-}
-
-/* Styling for the credit text within the footer */
-#credit {
-    font-size: large;
-}
-
-/* Styling for social media icons within the footer */
-.social-media {
-    display: flex;
-    margin-right: 50px;
-    flex-wrap: wrap;
-}
-
-/* Styling for social media links within the footer */
-.social-media a {
-    color: #333;
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-/* Styling for paragraphs within the main content */
-main p {
-    max-width: 600px;
-    margin: 0;
-}
-
-/* Styling for Font Awesome icons */
-.fa {
-    padding: 6px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-/* Styling for elements with class "blue" */
-.blue {
-    color: #003366;
-}
-
-/* Container styling for the form */
-.data-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Heading style for the form */
-.data-form h2 {
-    color: #333;
-    text-align: center;
-}
-
-/* Label styling for form inputs */
-.data-form label {
-    display: block;
-    margin-top: 10px;
+a, h1, h2{
     font-weight: bold;
 }
 
-/* Styling for text inputs, textareas, and selects */
-.data-form input,
-.data-form textarea,
-.data-form select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 6px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
-/* Styling for checkboxes */
-.data-form input[type="checkbox"] {
-    width: auto;
-  }
-  
-  /* Styling for multi-select dropdowns */
-  .data-form select[multiple] {
-    height: 100px; /* Adjust the height based on your design */
-  }
-
-  /* Styling for the submit button */
-.data-form button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Hover effect for the submit button */
-  .data-form button:hover {
-    background-color: #45a049;
-  }
-
-  /* Style for the table with the "styled-table" class */
-.styled-table {
-    width: 100%; 
-    border-collapse: collapse;
-    margin-top: 20px; 
-  }
-  
-  /* Style for table header cells and data cells */
-  .styled-table th, .styled-table td {
-    border: 1px solid #ddd; 
-    padding: 8px; 
-    text-align: left; 
-  }
-  
-  /* Style for table header cells */
-  .styled-table th {
-    background-color: #003366; 
-    color: white; 
-  }
-
-  /* Container styles for the event details */
-.details-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/*main styles*/
+main {
+    flex: 1;
 }
 
-/* Styles for the event table */
-.event-table {
+/* Header styles */
+header {
+    background-color: #0A235C; /* Brandeis blue */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*h1 in header styles */
+header h1 {
+    font-size: 2rem;
+}
+
+.hero p{
+    color: black;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #0E3B80; /* Slightly darker Brandeis blue */
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Image in home page*/
+.hero img {
+    max-width: 100%;
+}
+
+/* About section styles */
+.about {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0A235C; /* Brandeis blue */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for table headers */
-.event-table th {
-    background-color: #003366;
+.main-header__logo img{
+    height: auto;
+    left:24px;
+    top:12px;
+    z-index:2;
+    width: 300px;
+}
+
+img {
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .about-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Mission and Values Section */
+  .mission-values {
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  .mission-values h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #007bff;
+  }
+  
+  .mission-values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mission-values ul li {
+    margin-top: 1rem;
+    display: list-item;
+    text-align: match-parent;
+  }
+  
+  .mission-values ul li span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* General Styling */
+  h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .white-text {
     color: white;
-    padding: 15px;
+  }
+
+  /* Facilities Section */
+.facilities {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .facilities h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .facilities p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  .facility {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+  }
+  
+  .facility img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+  
+  .facility h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 1rem;
+  }
+  
+  .facility p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .facility:hover {
+    transform: scale(1.05);
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+/* Programs Section */
+.programs {
+    padding: 2rem;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+.programs p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.program {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.program:hover {
+    transform: scale(1.03);
+}
+
+.program-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.program-details {
+    flex: 1;
+    padding: 1.5rem;
     text-align: left;
 }
 
-/* Styles for table cells */
-.event-table td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+.program h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-top: 1rem;
 }
 
-/* Styles for action buttons */
-.actions {
-    margin-top: 20px;
+.program-subtitle {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 1rem;
 }
 
-/* Common styles for buttons */
-.button {
-    background-color: #003366;
-    color: white;
-    padding-bottom: 5px;
-    padding: 10px 15px;
-    border: none;
+.program-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+/* Events Section */
+.events {
+    padding: 2rem;
+    text-align: left;
+}
+
+.events h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+.past-event img{
+    max-width: 57%; 
+}
+
+.membership-info, .membership-types, .guest-policy, .child-policy {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.membership-info h3, .membership-types h3, .guest-policy h3, .child-policy h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-top: 1rem;
+}
+
+.membership-info p, .membership-types ul, .guest-policy ul, .child-policy ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.membership-types ul, .guest-policy ul, .child-policy ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Membership Form styles */
+.membership {
+    text-align: center;
+    padding: 2rem;
+}
+
+.membership h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+.membership p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.membership form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.membership label {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.membership input,
+.membership button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.membership button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .membership form {
+        max-width: 100%;
+    }
+}
+
+
+/* Events Section */
+.events, .past-events {
+    padding: 2rem;
+    text-align: center;
+}
+
+.events h2, .past-events h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+.events p, .past-events p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.event, .past-event {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event:hover, .past-event:hover {
+    transform: scale(1.03);
+}
+
+.event, .past-event img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event, .past-event h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-top: 1rem;
+}
+
+.event, .past-event p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.contact-info, .social-media, .contact-form {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3, .social-media h3, .contact-form h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-top: 1rem;
+}
+
+.contact-info p, .social-media ul, .contact-form form {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.social-media ul li {
+    margin: 0 1rem;
+}
+
+.social-media ul li a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media ul li a img:hover {
+    transform: scale(1.1);
+}
+
+/* Adding a round border to the Font Awesome icons */
+.social-media ul li a {
     text-decoration: none;
     display: inline-block;
-    margin-right: 10px;
+    border: 2px solid #007bff; 
+    border-radius: 50%; 
+    padding: 10px; 
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Hover effect for buttons */
-.button:hover {
-    background-color: #001f33;
+/* When hovering over the icons, increase size */
+.social-media ul li a:hover {
+    transform: scale(1.1);
 }
-  
-/* Responsive Styles for screens up to 800px wide */
-@media screen and (max-width: 800px) {
-    /* Adjustments to header for smaller screens */
-    header {
-        display: flex;
-        padding: 10px;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        font-size: medium;
+
+/* Remove default list styles */
+.social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form form {
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.contact-form button {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('sports-complex.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    max-width: 57%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 2rem;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.feature {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-top: 1rem;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.thank-you {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.thank-you h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.thank-you p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.explore-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    header h1, header h2 {
+        font-size: 1.5rem;
     }
 
-    /* Styling for the logo image on smaller screens */
-    .logo img {
-        max-height: 100px;
-    }
-
-    /* Styling for the title on smaller screens */
-    .title {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    /* Adjustments to navigation bar for smaller screens */
-    .navbar {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .main-header__logo .brandeis-logo{
+        max-width: 34%;
         height: auto;
     }
 
-    /* Adjustments to individual navigation items on smaller screens */
-    .navbar li {
-        padding: 10px 20px;
-        margin-right: 0;
-        margin-bottom: 7px;
-        margin-top: 7px;
-        font-size: medium;
-        width: 120px;
-        text-align: center;
+    nav ul {
+        font-size: 0.9rem;
     }
 
-    /* Styling adjustments for the main content on smaller screens */
-    main {
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-        margin-left: 60px;
-        margin-top: 20px;
-    }
-
-    /* Adjustments to footer for smaller screens */
-    footer {
-        display: flex;
-        background-color: #ccc;
-        color: #333;
-        text-align: center;
-        padding-top: 2px;
-        bottom: 0;
-        width: 100%;
-        padding: 7px 0;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Styling adjustments for the footer information on smaller screens */
-    #footer-info {
-        margin-left: 15px;
-    }
-
-    /* Styling adjustments for the credit text on smaller screens */
-    #credit {
-        font-size: medium;
-    }
-
-    /* Styling adjustments for social media icons on smaller screens */
-    .social-media {
-        margin-right: 15px;
-    }
-
-    /* Styling adjustments for social media links on smaller screens */
-    .social-media a {
-        color: #333;
-        margin-left: 7px;
-        font-size: 17px;
-    }
-
-    /* Styling adjustments for paragraphs within the main content on smaller screens */
-    main p {
-        max-width: 450px;
-        margin: 0;
-    }
-
-    /* Styling adjustments for Font Awesome icons on smaller screens */
-    .fa {
-        padding: 5px;
-        font-size: 20px;
-        width: 20px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-    }
-}
-
-/* Responsive Styles for screens up to 450px wide */
-@media screen and (max-width: 450px) {
-    /* Adjustments to header for smaller screens */
-    header {
-        display: flex;
-        font-size: small;
-    }
-
-    /* Styling adjustments for the logo image on smaller screens */
-    .logo img {
-        max-height: 80px;
-    }
-
-    /* Styling adjustments for the main content on smaller screens */
-    main {
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-        margin-left: 50px;
-        margin-top: 10px;
-    }
-
-    /* Adjustments to footer for smaller screens */
-    footer {
-        display: flex;
-        background-color: #ccc;
-        color: #333;
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 5px 0;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Styling adjustments for the footer information on smaller screens */
-    #footer-info {
-        margin-left: 10px;
-    }
-
-    /* Styling adjustments for the credit text on smaller screens */
-    #credit {
-        font-size: small;
-    }
-
-    /* Styling adjustments for social media icons on smaller screens */
-    .social-media {
-        margin-right: 10px;
-        align-items: center;
-    }
-
-    /* Styling adjustments for social media links on smaller screens */
-    .social-media a {
-        color: #333;
-        margin-left: 4px;
-        font-size: 15px;
-    }
-
-    /* Adjustments to navigation bar for smaller screens */
-    .navbar {
+    nav ul {
         list-style: none;
+        text-align: center;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    nav li {
+        margin-bottom: 10px; /* Add space between items */
     }
 
-    /* Styling adjustments for individual navigation items on smaller screens */
-    .navbar li {
-        margin-bottom: 5px;
-        margin-top: 5px;
-        font-size: small;
-        margin-right: 5px;
-        padding: 5px 10px;
-        text-align: center;
-        width: 100px;
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+        margin-right: 0;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .feature i {
+        font-size: 2rem;
+    }
+
+    .feature h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .contact-info h3, .social-media h3, .contact-form h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p, .social-media ul, .contact-form form {
+        font-size: 0.9rem;
+    }
+
+    .social-media ul li a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-form label {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
     }
 }

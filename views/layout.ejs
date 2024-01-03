@@ -15,32 +15,24 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="logo">
-        <!-- Brandeis Logo -->
-        <img
-          type="image/png"
-          src="/images/BrandeisLogo.png"
-          alt="Brandeis University Logo"
-        />
-      </div>
-      <div class="title">
-        <!-- Brandeis University Heading -->
-        <h1 class="blue">Brandeis University</h1>
-        <!-- Students and Alumni Association Sub-heading -->
-        <h2 class="blue">Students and Alumni Association</h2>
-      </div>
+      <a class="main-header__logo" href="/">
+        <img class="brandeis-logo" src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/brandeisu.sidearmsports.com/images/responsive_2023/logo_main.png" alt="Brandeis Logo, jump to homepage">
+    </a>
+    <h1 class="white-text">Welcome to Brandeis Sport Complex</h1>
     </header>
 
     <!-- Navigation Bar -->
     <nav>
-      <ul class="navbar">
+      <ul>
         <a type="text/html" href="/"><li>Home</li></a>
         <a type="text/html" href="/about"><li>About</li></a>
         <a type="text/html" href="jobs"><li>Jobs</li></a>
         <a type="text/html" href="events"><li>Events</li></a>
+        <a type="text/html" href="facilities"><li>Facilities</li></a>
+        <a type="text/html" href="membership"><li>Membership</li></a>
         <a type="text/html" href="/contact"><li>Contact</li></a>
         <li><%- include('events/_eventsModal') %></li>
-        <a href="/chat" class="chat-icon"><li>@</li></a>
+        <a href="/chat" class="chat-icon"><li>Live chat</li></a>
         <a href="/users/new"><li>Sign Up</li></a>
         <% if (loggedIn) { %>
         <a href="/users/logout"><li>Sign out</li></a>
@@ -79,13 +71,13 @@
         <p id="credit">&copy; 2023 Brandeis University</p>
       </div>
       <!-- Social Media Buttons - Use the provided link for reference -->
-      <div class="social-media">
+      <!-- <div class="social-media">
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-instagram"></a>
         <a href="#" class="fa fa-linkedin"></a>
         <a href="#" class="fa fa-youtube"></a>
         <a href="#" class="fa fa-twitter"></a>
-      </div>
+      </div> -->
     </footer>
     <script src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
