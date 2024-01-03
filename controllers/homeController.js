@@ -20,6 +20,9 @@ showFacilities:(req,res)=>{
 showMembership:(req,res)=>{
     res.render("membership");
 },
+showPrograms:(req,res)=>{
+    res.render("programs");
+},
 showJobs : (req, res) => {
     res.render("jobs"); 
 }};

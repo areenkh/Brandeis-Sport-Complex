@@ -53,15 +53,14 @@
 <main>
     <!--signup form-->
     <div class="membership">
-        <h2>Sign Up Form</h2>        
-        <form action="/signup" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <button type="submit">Sign Up</button>
+        <h2>Sign In Form</h2>        
+        <form action="/users/login" method="POST">
+            <label for="inputEmail">Email address</label>
+            <input type="email" name="email" id="inputEmail” placeholder="Email address"
+            required>
+            <label for="inputPassword">Password</label>
+            <input type="password" name="password" id="inputPassword" placeholder="Password" required>
+            <button type="submit">Sign In</button>
         </form>
     </div>
 </main>

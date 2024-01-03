@@ -7,5 +7,6 @@ router.get("/contact", homeController.showContact);
 router.get("/chat", homeController.chat);
 router.get("/facilities", homeController.showFacilities);
 router.get("/membership", homeController.showMembership);
+router.get("/programs", homeController.showPrograms);
 
 module.exports = router;
