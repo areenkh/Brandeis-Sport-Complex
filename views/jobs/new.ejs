@@ -1,0 +1,96 @@
+<div class="data-form">
+    <form action="/jobs/create" method="POST">
+      <h2>Create a New Job:</h2>
+      <label for="inputTitle">Title</label>
+      <input
+        type="text"
+        name="title"
+        id="inputTitle"
+        placeholder="Title"
+        autofocus
+        required
+      />
+      <label for="inputCompany">Company</label>
+      <input
+        type="text"
+        name="company"
+        id="inputCompany"
+        placeholder="Company"
+        required
+      />
+      <label for="inputLocation">Location</label>
+      <input
+        type="text"
+        name="location"
+        id="inputLocation"
+        placeholder="Location"
+        required
+      />
+      <label for="inputDescription">Description</label>
+      <textarea
+        name="description"
+        id="inputDescription"
+        placeholder="Description"
+        required
+      ></textarea>
+      <label for="inputRequirements">Requirements</label>
+      <textarea
+        name="requirements"
+        id="inputRequirements"
+        placeholder="Requirements"
+        required
+      ></textarea>
+      <label for="inputSalary">Salary</label>
+      <input
+        type="number"
+        name="salary"
+        id="inputSalary"
+        placeholder="Salary"
+        required
+      />
+      <label for="inputContactEmail">Contact Email</label>
+      <input
+        type="email"
+        name="contactEmail"
+        id="inputContactEmail"
+        placeholder="Contact Email"
+        required
+      />
+      <label for="inputContactPhone">Contact Phone</label>
+      <input
+        type="tel"
+        name="contactPhone"
+        id="inputContactPhone"
+        placeholder="Contact Phone"
+        required
+      />
+      <label for="inputPostDate">Post Date</label>
+        <input
+        type="date"
+        name="postDate"
+        id="inputPostDate"
+        value="<%= job.postDate.toISOString().split('T')[0] %>"
+        placeholder="Post Date"
+        readonly
+        />
+      <label for="inputDeadlineDate">Deadline Date</label>
+      <input
+        type="date"
+        name="deadlineDate"
+        id="inputDeadlineDate"
+        placeholder="Deadline Date"
+        required
+      />
+      <label for="inputIsActive">Active</label>
+      <input
+        type="checkbox"
+        name="isActive"
+        id="inputIsActive"
+      />
+    </br>
+      <button type="submit">Create</button>
+    </br>
+  </br>
+</br>
+    </form>
+</div>

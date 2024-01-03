@@ -1,0 +1,83 @@
+<div class="details-container">
+<h1>User Data for <%= user.name %></h1>
+<table class="event-table">
+  <tr>
+    <th>Name</th>
+    <td><%= user.name %></td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td><%= user.email %></td>
+  </tr>
+  <tr>
+    <th>Zip Code</th>
+    <td><%= user.zipCode %></td>
+  </tr>
+    <tr>
+        <th>Role</th>
+        <td><%= user.role %></td>
+    </tr>
+    <tr>
+        <th>Graduation Year</th>
+        <td><%= user.graduationYear %></td>
+    </tr>
+    <tr>
+        <th>Major</th>
+        <td><%= user.major %></td>
+    </tr>
+    <tr>
+        <th>Job</th>
+        <td><%= user.job %></td>
+    </tr>
+    <tr>
+        <th>Company</th>
+        <td><%= user.company %></td>
+    </tr>
+    <tr>
+        <th>City</th>
+        <td><%= user.city %></td>
+    </tr>
+    <tr>
+        <th>State</th>
+        <td><%= user.state %></td>
+    </tr>
+    <tr>
+        <th>Country</th>
+        <td><%= user.country %></td>
+    </tr>
+    <tr>
+        <th>Bio</th>
+        <td><%= user.bio %></td>
+    </tr>
+    <tr>
+        <th>Interests</th>
+        <td><%= user.interests %></td>
+    </tr>
+  <tr>
+    <th>Password</th>
+    <td><%= user.password %></td>
+  </tr>
+  <tr>
+    <th>apiToken</th>
+    <td><%= user.apiToken %></td>
+  </tr>
+</table>
+<div class="actions">
+<div>
+  <a href="/users">View all users</a>
+</div>
+<div>
+  <a href="<%=`/users/${user._id}/edit`%>">Edit User Details</a>
+</div>
+<div>
+  <a
+    href="<%= `/users/${user._id}/delete?_method=DELETE` %>"
+    onclick="return confirm('Are you sure you want to delete this record?')"
+    >Delete</a
+  >
+</div>
+</div>
+</div>
+</br>
+</br>
+</br>

@@ -1,0 +1,28 @@
+{
+  "name": "brandeis_saa_express",
+  "version": "1.0.0",
+  "description": "Brandeis University Students and Alumni Association Express based project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Areen Khalaila",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^5.3.0",
+    "http-status-codes": "^2.3.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.0.0",
+    "passport": "^0.6.0",
+    "passport-local-mongoose": "^8.0.0",
+    "rand-token": "^1.0.1",
+    "socket.io": "^4.7.2"
+  }
+}

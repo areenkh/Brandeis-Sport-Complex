@@ -1,0 +1,30 @@
+<div class="data-form">
+    <form action="/events/create" method="POST">
+      <h2>Create a New Event:</h2>
+      <label for="inputTitle">Title</label>
+      <input type="text" name="title" id="inputTitle" placeholder="Title" autofocus required />
+      <label for="inputDescription">Description</label>
+      <textarea name="description" id="inputDescription" placeholder="Description" required></textarea>
+      <label for="inputLocation">Location</label>
+      <input type="text" name="location" id="inputLocation" placeholder="Location" required />
+      <label for="inputStartDate">Start Date</label>
+      <input type="date" name="startDate" id="inputStartDate" required />
+      <label for="inputEndDate">End Date</label>
+      <input type="date" name="endDate" id="inputEndDate" required />
+      <label for="inputIsOnline">Is Online</label>
+      <input type="checkbox" name="isOnline" id="inputIsOnline" />
+      <label for="inputRegistrationLink">Registration Link</label>
+      <input type="text" name="registrationlink" id="inputRegistrationLink" placeholder="Registration Link" />
+      <label for="inputAttendees">Select Attendees</label>
+      <select name="attendees" id="inputAttendees" multiple>
+        <% users.forEach((user) => { %>
+          <option value="<%= user._id %>"><%= user.name %></option>
+        <% }); %>
+      </select>
+      <button type="submit">Create</button>
+    </br>
+  </br>
+</br>
+    </form>
+  </div>
+  

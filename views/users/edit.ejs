@@ -1,0 +1,137 @@
+<div class="data-form">
+    <form method="POST" action="<%=`/users/${user._id}/update?_method=PUT`%>">
+      <h2>Edit user:</h2>
+      <label for="inputName">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="inputName"
+        value="<%= user.name %>"
+        placeholder="Name"
+        autofocus
+      />
+      <label for="inputPassword">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="inputPassword"
+        value="<%= user.password %>"
+        placeholder="Password"
+        required
+      />
+      <label for="inputEmail">Email address</label>
+      <input
+        type="email"
+        name="email"
+        id="inputEmail"
+        value="<%= user.email %>"
+        placeholder="Email address"
+        required
+      />
+      <label for="inputZipCode">Zip Code</label>
+      <input
+        type="text"
+        name="zipCode"
+        id="inputZipCode"
+        pattern="\d*"
+        value="<%= user.zipCode %>"
+        placeholder="Zip Code"
+        required
+      />
+      <label for="inputRole">Role</label>
+        <input
+            type="text"
+            name="role"
+            id="inputRole"
+            placeholder="Role"
+            value="<%= user.role %>"
+            required
+        />
+        <label for="inputGraduationYear">Graduation Year</label>
+        <input
+            type="text"
+            name="graduationYear"
+            id="inputGraduationYear"
+            placeholder="Graduation Year"
+            value="<%= user.graduationYear %>"
+            required
+        />
+        <label for="inputMajor">Major</label>
+        <input
+            type="text"
+            name="major"
+            id="inputMajor"
+            placeholder="Major"
+            value="<%= user.major %>"
+            required
+        />
+        <label for="inputJob">Job</label>
+        <input
+            type="text"
+            name="job"
+            id="inputJob"
+            placeholder="Job"
+            value="<%= user.job %>"
+            required
+        />
+        <label for="inputCompany">Company</label>
+        <input
+            type="text"
+            name="company"
+            id="inputCompany"
+            placeholder="Company"
+            value="<%= user.company %>"
+            required
+        />
+        <label for="inputCity">City</label>
+        <input
+            type="text"
+            name="city"
+            id="inputCity"
+            placeholder="City"
+            value="<%= user.city %>"
+            required
+        />
+        <label for="inputState">State</label>
+        <input
+            type="text"
+            name="state"
+            id="inputState"
+            placeholder="State"
+            value="<%= user.state %>"
+            required
+        />
+        <label for="inputCountry">Country</label>
+        <input
+            type="text"
+            name="country"
+            id="inputCountry"
+            placeholder="Country"
+            value="<%= user.country %>"
+            required
+        />
+        <label for="inputBio">Bio</label>
+        <input
+            type="text"
+            name="bio"
+            id="inputBio"
+            placeholder="Bio"
+            value="<%= user.bio %>"
+            required
+        />
+        <label for="inputInterests">Interests</label>
+        <input
+            type="text"
+            name="interests"
+            id="inputInterests"
+            placeholder="Interests"
+            value="<%= user.interests %>"
+            required
+        />
+      <button type="submit">Update</button>
+    </form>
+  </div>
+</br>
+</br>
+</br>
+  
